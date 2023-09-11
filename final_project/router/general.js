@@ -38,7 +38,7 @@ public_users.post('/register', (req, res) => {
 // public_users.get('/', async function (req, res) {
 //     try {
 //         // Fetch books using Axios
-//         const response = await axios.get('https://bsce20004-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai');
+//         const response = await axios.get('https://mobiasmobeen-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/');
 
 //         const bookList = response.data;
 //         return res.status(200).json(bookList);
@@ -86,7 +86,7 @@ public_users.get('/', function (req, res) {
 
 //     try {
 //         // Fetch book details using Axios
-//         const response = await axios.get(`https://bsce20004-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/${requestedISBN}`); 
+//         const response = await axios.get(`https://mobiasmobeen-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/${requestedISBN}`); 
 
 //         const bookDetails = response.data;
 //         return res.status(200).json(bookDetails);
@@ -143,7 +143,7 @@ public_users.get('/isbn/:isbn', function (req, res) {
 
 //     try {
 //         // Fetch books by author using Axios
-//         const response = await axios.get(`https://bsce20004-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/author/${requestedAuthor}`); 
+//         const response = await axios.get(`https://mobiasmobeen-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/author/${requestedAuthor}`); 
 
 //         const booksByAuthor = response.data;
 //         return res.status(200).json(booksByAuthor);
@@ -226,7 +226,7 @@ public_users.get('/title/:title', async function (req, res) {
 
     try {
         // Fetch books by title using Axios
-        const response = await axios.get(`https://bsce20004-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/title/${requestedTitle}`);
+        const response = await axios.get(`https://mobiasmobeen-5000.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/title/${requestedTitle}`);
 
         const booksByTitle = response.data;
         return res.status(200).json(booksByTitle);
